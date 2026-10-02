@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Annotations MicronsPerPixel="0.25">
+  <Annotation Id="1" Name="Tumor &amp; Mitosis Layer" ReadOnly="0" NameReadOnly="0" LineColorReadOnly="0" Incremental="0" Type="4" LineColor="65280" Visible="1" Selected="1" Tag="">
+    <Attributes>
+      <Attribute Name="ModelName" Id="0" Value="StarDist-WSI" />
+      <Attribute Name="ModelVersion" Id="1" Value="1.0.0" />
+    </Attributes>
+    <Regions>
+      <RegionSequenceHeader>
+        <X>0</X>
+        <Y>0</Y>
+        <Zoom>1.0</Zoom>
+      </RegionSequenceHeader>
+      <Region Id="1" Type="0" Zoom="1.0" Selected="1" ImageLocation="" ImageFocus="0" Length="120.0" Area="800.0" LengthMicrons="30.0" AreaMicrons="50.0" Text="Tumor Boundary" NegativeROA="0" InputRegionId="0">
+        <Attributes>
+          <Attribute Name="Confidence" Id="0" Value="0.95" />
+          <Attribute Name="Class" Id="1" Value="Tumor" />
+          <Attribute Name="ModelName" Id="2" Value="StarDist-WSI" />
+          <Attribute Name="VerificationStatus" Id="3" Value="unreviewed" />
+        </Attributes>
+        <Vertices>
+          <Vertex X="100.0" Y="100.0" Z="0" />
+          <Vertex X="200.0" Y="100.0" Z="0" />
+          <Vertex X="200.0" Y="200.0" Z="0" />
+          <Vertex X="100.0" Y="200.0" Z="0" />
+        </Vertices>
+      </Region>
+      <Region Id="2" Type="1" Zoom="1.0" Selected="1" ImageLocation="" ImageFocus="0" Length="600.0" Area="20000.0" LengthMicrons="150.0" AreaMicrons="1250.0" Text="ROI Box" NegativeROA="0" InputRegionId="0">
+        <Attributes>
+          <Attribute Name="Confidence" Id="0" Value="0.88" />
+          <Attribute Name="Class" Id="1" Value="Stroma" />
+          <Attribute Name="ModelName" Id="2" Value="StarDist-WSI" />
+          <Attribute Name="VerificationStatus" Id="3" Value="accepted" />
+        </Attributes>
+        <Vertices>
+          <Vertex X="300.0" Y="300.0" Z="0" />
+          <Vertex X="500.0" Y="300.0" Z="0" />
+          <Vertex X="500.0" Y="400.0" Z="0" />
+          <Vertex X="300.0" Y="400.0" Z="0" />
+        </Vertices>
+      </Region>
+      <Region Id="3" Type="2" Zoom="1.0" Selected="1" ImageLocation="" ImageFocus="0" Length="314.1" Area="7854.0" LengthMicrons="78.5" AreaMicrons="490.8" Text="Nucleus" NegativeROA="0" InputRegionId="0">
+        <Attributes>
+          <Attribute Name="Confidence" Id="0" Value="0.99" />
+          <Attribute Name="Class" Id="1" Value="Mitosis" />
+          <Attribute Name="ModelName" Id="2" Value="StarDist-WSI" />
+          <Attribute Name="VerificationStatus" Id="3" Value="unreviewed" />
+        </Attributes>
+        <Vertices>
+          <Vertex X="550.0" Y="600.0" Z="0" />
+          <Vertex X="600.0" Y="550.0" Z="0" />
+          <Vertex X="650.0" Y="600.0" Z="0" />
+          <Vertex X="600.0" Y="650.0" Z="0" />
+        </Vertices>
+      </Region>
+      <Region Id="4" Type="3" Zoom="1.0" Selected="1" ImageLocation="" ImageFocus="0" Length="100.0" Area="0.0" LengthMicrons="25.0" AreaMicrons="0.0" Text="Pointer to mitosis" NegativeROA="0" InputRegionId="0">
+        <Attributes>
+          <Attribute Name="Confidence" Id="0" Value="0.97" />
+          <Attribute Name="Class" Id="1" Value="Mitosis" />
+          <Attribute Name="ModelName" Id="2" Value="StarDist-WSI" />
+          <Attribute Name="VerificationStatus" Id="3" Value="accepted" />
+        </Attributes>
+        <Vertices>
+          <Vertex X="700.0" Y="700.0" Z="0" />
+          <Vertex X="600.0" Y="600.0" Z="0" />
+        </Vertices>
+      </Region>
+      <Region Id="5" Type="4" Zoom="1.0" Selected="1" ImageLocation="" ImageFocus="0" Length="200.0" Area="0.0" LengthMicrons="50.0" AreaMicrons="0.0" Text="Margin line" NegativeROA="0" InputRegionId="0">
+        <Vertices>
+          <Vertex X="800.0" Y="800.0" Z="0" />
+          <Vertex X="1000.0" Y="800.0" Z="0" />
+        </Vertices>
+      </Region>
+    </Regions>
+  </Annotation>
+</Annotations>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<annotations>
+  <annotation id="1" displayname="Tumor Cluster" color="#FF0000">
+    <title>Tumor Cluster</title>
+    <details>{"ai":{"model":"YOLOv8-WSI","version":"1.0.0","confidence":0.94,"class":"Tumor","verificationStatus":"unreviewed"}}</details>
+    <type>freehand</type>
+    <pointlist>
+      <point>
+        <x>-1250000</x>
+        <y>3400000</y>
+      </point>
+      <point>
+        <x>-1240000</x>
+        <y>3420000</y>
+      </point>
+      <point>
+        <x>-1230000</x>
+        <y>3410000</y>
+      </point>
+    </pointlist>
+    <specialtype>closedfreehand</specialtype>
+  </annotation>
+  <annotation id="2" displayname="Mitosis Pointer" color="#00FF00">
+    <title>Mitosis 0.98</title>
+    <details>{"ai":{"model":"YOLOv8-WSI","confidence":0.98,"class":"Mitosis","verificationStatus":"accepted"}}</details>
+    <type>pin</type>
+    <pointlist>
+      <point>
+        <x>540000</x>
+        <y>-820000</y>
+      </point>
+      <point>
+        <x>550000</x>
+        <y>-810000</y>
+      </point>
+    </pointlist>
+  </annotation>
+  <annotation id="3" displayname="Tumor Core Rect" color="#0000FF">
+    <title>Tumor Core</title>
+    <type>rect</type>
+    <pointlist>
+      <point>
+        <x>100000</x>
+        <y>200000</y>
+      </point>
+      <point>
+        <x>300000</x>
+        <y>400000</y>
+      </point>
+    </pointlist>
+  </annotation>
+  <annotation id="4" displayname="Glomerulus Circle" color="#FFA500">
+    <title>Glomerulus</title>
+    <type>circle</type>
+    <pointlist>
+      <point>
+        <x>500000</x>
+        <y>600000</y>
+      </point>
+    </pointlist>
+    <radius>50000</radius>
+  </annotation>
+  <annotation id="5" displayname="Resection Margin" color="#800080">
+    <title>Margin</title>
+    <type>linear</type>
+    <pointlist>
+      <point>
+        <x>-500000</x>
+        <y>-500000</y>
+      </point>
+      <point>
+        <x>-400000</x>
+        <y>-400000</y>
+      </point>
+    </pointlist>
+  </annotation>
+</annotations>

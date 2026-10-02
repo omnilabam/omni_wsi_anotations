@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "det-1042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [100.0, 200.0],
+            [200.0, 200.0],
+            [200.0, 300.0],
+            [100.0, 300.0],
+            [100.0, 200.0]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "Tumor",
+          "color": [255, 0, 0]
+        },
+        "isLocked": false,
+        "measurements": {
+          "Area um^2": 1542.4,
+          "Perimeter um": 182.1
+        },
+        "ai": {
+          "model": "YOLOv8-WSI",
+          "version": "1.0.0",
+          "confidence": 0.962,
+          "verificationStatus": "unreviewed"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "det-1043",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [550.0, 650.0]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "Mitosis",
+          "color": [0, 255, 0]
+        },
+        "ai": {
+          "model": "YOLOv8-WSI",
+          "confidence": 0.89,
+          "verificationStatus": "accepted"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "det-1044",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [1000.0, 1000.0],
+          [1200.0, 1200.0]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "name": "Margin line"
+      }
+    }
+  ]
+}
